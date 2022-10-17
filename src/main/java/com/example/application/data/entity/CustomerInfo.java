@@ -11,12 +11,13 @@ import com.example.application.data.AbstractEntity;
 
 @Entity
 public class CustomerInfo extends AbstractEntity {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+//
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private long id;
 
     @NotNull
+
     private String phoneNumber;
 
 
@@ -32,19 +33,6 @@ public class CustomerInfo extends AbstractEntity {
     @NotNull
     private String itemType;
 
-
-    @Email
-    @NotNull
-    private String email;
-
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
 
     public String getPhoneNumber() { return phoneNumber; }
